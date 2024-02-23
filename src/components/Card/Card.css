@@ -1,0 +1,41 @@
+/* Estilos generales para la tarjeta */
+.card-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el título */
+  .title h2 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el contenido */
+  .content {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la información adicional (fecha y autor) */
+  .additional-info {
+    color: #999999;
+    font-size: 0.8rem;
+  }
+  
+  /* Estilos para la tarjeta en conjunto */
+  .card-wrapper:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .view-more {
+    color:#0000EE;
+    cursor: pointer;
+  }
