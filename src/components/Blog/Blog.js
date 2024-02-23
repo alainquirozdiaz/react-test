@@ -14,7 +14,7 @@ function Blog() {
   const [viewState, setViewState] = useState("list")
 
     useEffect(() => {
-    if(navigator.onLine){
+    if(window.navigator.onLine){
     axios.get('http://localhost:3001/', {headers: {"Access-Control-Allow-Origin": "*"}})
       .then(response => {
         setBlogs(response.data);
@@ -81,7 +81,7 @@ function Blog() {
       : null
       }
       {viewState === "list"
-        ? navigator.onLine ? <button onClick={e => handleViewChange("add")}>Add Blog</button> : <button>No internet connection</button>
+        ? window.navigator.onLine ? <button onClick={e => handleViewChange("add")}>Add Blog</button> : <button>No internet connection</button>
         : <button className='list-blogs-button' onClick={e => handleViewChange("list")}>List of Blogs</button>
       }
       {viewState === "add"
